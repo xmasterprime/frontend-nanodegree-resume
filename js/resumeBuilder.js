@@ -1,17 +1,3 @@
-// $("#main").append("Dustin Sison");
-
-var awesomeThoughts = "I am Dustin and I am AWESOME!";
-
-console.log(awesomeThoughts);
-
-var funThoughts = awesomeThoughts.replace("AWESOME!", "FUN");
-
-var HTMLheaderName = "%data%";
-var name = "Dustin";
-var HTMLheaderRole = "%data%";
-var role = "Beginner Web Developer";
-var skills = ["Eating", "Sleeping"];
-
 var bio = {
 	"name" : "Dustin",
 	"role" : "QA Engineer",
@@ -21,9 +7,22 @@ var bio = {
 	"skills" : "yeah" 
 };
 
-var formattedName = HTMLheaderName.replace("%data%", name);
-var formattedRole = HTMLheaderRole.replace("%data%", role);
+var education = {
+	"name" : "SFSU",
+	"location" : "San Francisco",
+	"degree" : "BS in Political Science",
+	"dates" : "June 2013",
+	"url" : "sfsu.edu"
+};
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#header").prepend(bio.name);
+var projects = {
+	"title" : "Android Developer",
+	"dates" : "February 2017",
+	"description" : "Android Dev for WalkTalk"
+};
+
+var work = {
+	"title" : "QA Engineer",
+	"dates" : "August 2016",
+	"description" : "QA Engineer for Moovweb"
+};

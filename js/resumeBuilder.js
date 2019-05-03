@@ -45,7 +45,9 @@ var projects = {
 		{
 			"title": "Android Developer",
 			"dates": "February 2017",
-			"description": "Android Dev for WalkTalk"
+			"description": "Android Dev for WalkTalk",
+			"website": "https://www.udacity.com/",
+			"images": "https://lh3.googleusercontent.com/ooLDZsdlzJmOuKGe9HcMx5ppw8fd-ZxBJdj6dBbkekLQmQV9GJKDMX8yzMax98tieoasY4SUgw=w128-h128-e365"
 		}
 	]
 };
@@ -79,6 +81,18 @@ var work = {
 	var formattedBioPic = HTMLbioPic.replace('%data%', bio.bioPic);
 
 	$("#header").prepend(formattedBioName,formattedBioRole).append(formattedBioPic, formattedBioWelcomeMessage, HTMLskillsStart);
+	$("#main").append(internationalizeButton);
+
+	function inName(oldName) {
+
+		var finalName = oldName;
+		var names = oldName.split(" ");
+		names[1] = names[1].toUpperCase();
+		names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+		finalName = names.join(" ");
+
+		return finalName;
+	}
 
 	for (skill in bio.skills) {
 		var formattedBioSkills = HTMLskills.replace('%data%', bio.skills[skill]);
@@ -115,7 +129,7 @@ var work = {
 		var formattedProjectTitle = HTMLprojectTitle.replace('%data%', projects.projects[i].title).replace('#', projects.projects[i].website);
 		var formattedProjectDates = HTMLprojectDates.replace('%data%', projects.projects[i].dates);
 		var formattedProjectDescription = HTMLprojectDescription.replace('%data%', projects.projects[i].description);
-		var formattedProjectImage = HTMLprojectImage.replace('%data%', projects.projects[i].image);
+		var formattedProjectImage = HTMLprojectImage.replace('%data%', projects.projects[i].images);
 		$(".project-entry:last").append(formattedProjectTitle, formattedProjectDates, formattedProjectDescription, formattedProjectImage);
 	}
 

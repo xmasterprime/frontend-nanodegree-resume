@@ -8,7 +8,10 @@ var bio = {
 		"twitter": "https://twitter.com/XMasterPrime",
 		"location": "South San Francisco, CA"
 	},
-	"welcomeMessage": "Hello. I'm Dustin Sison, a Quality Assurance Engineer for over three years, that is currently exploring the exciting world of QA Automation! My skills include Manual QA work, Git release management, on-call services direct with developers and clients, and more recently, Automated QA scripting in either Java or Ruby, although I am open to learning other programming languages.",
+	"welcomeMessage": "Hello. I'm Dustin Sison, a Quality Assurance Engineer for over three years, that is currently " +
+		"exploring the exciting world of QA Automation! My skills include Manual QA work, Git release management, " +
+		"on-call services direct with developers and clients, and more recently, Automated QA scripting in either " +
+		"Java or Ruby, although I am open to learning other programming languages.",
 	"skills": [
 		"Manual QA Testing",
 		"Automated QA Script Writing (Java or Ruby)",
@@ -59,7 +62,12 @@ var work = {
 			"title": "Implementation QA Engineer",
 			"dates": "August 2016 - Present",
 			"location": "San Francisco, CA",
-			"description": "QA Engineer for Moovweb",
+			"description": "QA Engineer focused on new Moovweb projects being built on the Moovweb platform. Served " +
+				"as the first QA Engineer on many new projects, which needed scoping of existing websites, creating" +
+				" test plans and cases, and coordinating QA efforts with offshore teams. Additionally, I've had to " +
+				"serve on-call hours for emergencies on the Moovweb platform, as well as serve as a backup release " +
+				"manager for both new and existing projects, using Git and Github. For the past year, I have also " +
+				"been tasked with scripting automated test cases using Selenium, Ruby, Ruby on Rails, and Cucumber.",
 			"website": "https://www.moovweb.com"
 		},
 		{
@@ -69,6 +77,14 @@ var work = {
 			"location": "Brisbane, CA",
 			"description": "QA Engineer for Mode Media",
 			"website": "https://www.linkedin.com/company/mode-media/about/"
+		},
+		{
+			"employer": "Mode Media",
+			"title": "Associate Community Advocate",
+			"dates": "July 2013 - August 2015",
+			"location": "Brisbane, CA",
+			"description": "Customer Support for the Ning platform",
+			"website": "http://www.ning.com/"
 		}
 	]
 };

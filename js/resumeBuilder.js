@@ -179,3 +179,6 @@ var work = {
 
 	$(".education-entry:last").append(formattedOnlineTitle + formattedOnlineName, formattedOnlineDates,
 		formattedOnlineURL);
+
+// Location Module
+	$("#mapDiv").append(googleMap);

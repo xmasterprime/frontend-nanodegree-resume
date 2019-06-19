@@ -38,7 +38,8 @@ var education = {
 			"title": "Android Basics Nanodegree",
 			"school": "Udacity",
 			"dates": "2017",
-			"url": "https://udacity.com"
+			"url": "https://udacity.com",
+			"images": "https://lh3.googleusercontent.com/ooLDZsdlzJmOuKGe9HcMx5ppw8fd-ZxBJdj6dBbkekLQmQV9GJKDMX8yzMax98tieoasY4SUgw=w128-h128-e365"
 		}
 	]
 };
@@ -50,7 +51,6 @@ var projects = {
 			"dates": "February 2017",
 			"description": "Android Dev for WalkTalk",
 			"website": "https://www.udacity.com/",
-			"images": "https://lh3.googleusercontent.com/ooLDZsdlzJmOuKGe9HcMx5ppw8fd-ZxBJdj6dBbkekLQmQV9GJKDMX8yzMax98tieoasY4SUgw=w128-h128-e365"
 		}
 	]
 };
@@ -58,6 +58,7 @@ var projects = {
 var work = {
 	"jobs": [
 		{
+			"images": "https://media.licdn.com/dms/image/C560BAQHX0Whx6iegxA/company-logo_200_200/0?e=2159024400&v=beta&t=5GvwSrMimNfj6YIrxok-tfBnTweVe43zl8vC6nQJSZY",
 			"employer": "Moovweb",
 			"title": "Implementation QA Engineer",
 			"dates": "August 2016 - Present",
@@ -71,6 +72,7 @@ var work = {
 			"website": "https://www.moovweb.com"
 		},
 		{
+			"images": "https://static1.squarespace.com/static/56c2b40e40261d0fad427da3/56c384fe22482ef74de0c60f/56c3a2e21d07c049349a4257/1505172471132/Mode+Media.jpg?format=1000w",
 			"employer": "Mode Media",
 			"title": "QA Engineer",
 			"dates": "August 2015 - July 2016",
@@ -139,7 +141,8 @@ var work = {
 		var formattedWorkDates = HTMLworkDates.replace('%data%', work.jobs[i].dates);
 		var formattedWorkLocation = HTMLworkLocation.replace('%data%', work.jobs[i].location);
 		var formattedWorkDescription = HTMLworkDescription.replace('%data%', work.jobs[i].description);
-		$(".work-entry:last").append(formattedWorkEmployer + formattedWorkTitle, formattedWorkDates,
+		var formattedWorkImage = HTMLworkImage.replace('%data%', work.jobs[i].images);
+		$(".work-entry:last").append(formattedWorkImage, formattedWorkEmployer + formattedWorkTitle, formattedWorkDates,
 			formattedWorkLocation, formattedWorkDescription);
 	}
 
